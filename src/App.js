@@ -26,7 +26,7 @@ const router = createBrowserRouter(
         path="/booking/:carId" 
         element={<ProtectedRoute><BookingCar /></ProtectedRoute>}
         loader={async ({ params }) => {
-          const response = await fetch(`http://localhost:5001/api/cars/${params.carId}`);
+          const response = await fetch(`https://crbackend-lixw.onrender.com/api/cars/${params.carId}`);
           if (!response.ok) {
             throw new Error("Failed to load car data");
           }
