@@ -129,7 +129,6 @@ export default function Register() {
             </p>
 
             <form className="signup-form" onSubmit={handleSubmit}>
-              <div className="row">
                 <div className="field">
                   <label>Username</label>
                   <input
@@ -141,7 +140,6 @@ export default function Register() {
                     required
                   />
                 </div>
-              </div>
 
               <div className="field">
                 <label>Password</label>
