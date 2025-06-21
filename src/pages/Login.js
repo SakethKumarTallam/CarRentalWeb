@@ -107,7 +107,7 @@ export default function Login() {
               New to Car Rental? <Link to="/register">Register Now</Link>
             </p>
 
-            <form className="signup-form" onSubmit={handleSubmit}>
+            <form className="signup-form" style={{marginTop:50}} onSubmit={handleSubmit}>
               <div className="field">
                 <label>Username</label>
                 <input
