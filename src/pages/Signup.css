@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f7fa;
+}
+
+/* Full screen wrapper centered */
+.page-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: #f0f2f5;
+}
+
+/* Centered Card */
+.card-container {
+  width: 90vw;
+  min-height: 90vh;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+/* Left: form */
+.form-section {
+  flex: 1;
+  padding: 2.5rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+/* Right: image */
+.image-section {
+  flex: 1;
+  background-size: cover;
+  background-position: 80% 90%;
+  position: relative;
+}
+.image-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Header */
+.signup-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.signup-header .logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.signup-header nav a {
+  color: #777;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.signup-header nav a:hover {
+  color: #333;
+}
+
+.signup-content{
+    text-align: center;
+}
+/* Main content */
+.signup-content h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+.signup-tagline {
+  color: #888;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.dot {
+  color: #007aff;
+}
+.login-link {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+.login-link a {
+  color: #007aff;
+  text-decoration: none;
+}
+
+.signup-form{
+    text-align: start;
+}
+/* Form */
+.signup-form .row {
+  display: flex;
+  gap: 1rem;
+}
+.field {
+  margin-bottom: 1.25rem;
+  flex: 1;
+}
+.field label {
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+  color: #555;
+}
+.field input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background: #f9f9f9;
+  color: #333;
+  font-size: 1rem;
+}
+.field input:focus {
+  border-color: #007aff;
+  outline: none;
+}
+
+/* Password input + eye */
+.password-input {
+  position: relative;
+}
+.show-hide {
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #777;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+/* Buttons */
+.actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.btn-primary,
+.btn-secondary {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: #007aff;
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #3399ff;
+}
+.btn-secondary {
+  background-color: #e0e0e0;
+  color: #333;
+}
+.btn-secondary:hover {
+  background-color: #ccc;
+}
+
+.clr {
+  color: #007aff;
+}
