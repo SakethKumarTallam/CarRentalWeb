@@ -251,7 +251,15 @@ function BookingCar() {
         style={{ minHeight: "90vh" }}
       >
         <Col lg={10} sm={24} xs={24} className='p-3'>
-          <img src={car.image} className="carimg2 bs1 w-100" data-aos='flip-left' data-aos-duration='1500' />
+          // <img src={car.image} className="carimg2 bs1 w-100" data-aos='flip-left' data-aos-duration='1500' />
+        <img
+  src={car.image}
+  style={{ width: '100%', maxWidth: '500px', height: 'auto' }}
+  className="carimg2 bs1"
+  data-aos='flip-left'
+  data-aos-duration='1500'
+/>
+
         </Col>
 
         <Col lg={10} sm={24} xs={24} className="text-right">
