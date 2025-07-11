@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Car Rental System – Frontend Repo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the **React-based Full-stack application** of the Car Rental System built using the MERN stack. The application allows users to register, browse available rental cars, make bookings, and manage their profiles. Admins can manage inventory and bookings through a secure dashboard.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🔗 Live Demo
 
-### `npm start`
+👉 [Try it here...](https://car-rental-web-mu.vercel.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## 📌 Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🚘 Browse real-time car listings
+- 🔐 User authentication 
+- 📅 End-to-end booking workflow
+- 📊 Admin dashboard to manage cars and bookings
+- 📱 Fully responsive UI
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ⚙️ Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React.js**
+- **Axios**
+- **React Router DOM**
+- **Tailwind CSS / Bootstrap**
+- **Vercel** (for deployment)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📦 Installation & Local Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> ⚠️ **Make sure the backend server is running locally at `http://localhost:5001` before starting the frontend.**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repository:
 
-## Learn More
+```bash
+git clone https://github.com/SakethKumarTallam/CarRentalWeb
+cd CarRentalWeb
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Install Dependencies 
+```
+npm install
+```
+3. Start the Development Server
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+npm start
+```
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+##  🌐 Backend API
 
-### Analyzing the Bundle Size
+The frontend communicates with a backend API server built using Express and MongoDB.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+[Backend repo URL](https://github.com/SakethKumarTallam/CRBackend)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Environment Configuration
+For Development(`localhost`)
+```
+// src/axios.js
+baseURL: "http://localhost:5001/api"
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+For Production(`Deployment`)
+```
+// src/axios.js
+baseURL: <Your backend deployment link>
+```
 
-### Deployment
+- `Precaution`: Remember to switch the baseURL depending on whether you are running locally or deploying to Vercel.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+##  Project Summary
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Built as part of a full-stack car rental system:
+
+- User roles for admin and regular users
+
+- Booking optimization and intuitive workflows
+
+- API performance improved through efficient queries
