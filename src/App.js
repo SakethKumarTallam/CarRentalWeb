@@ -8,6 +8,8 @@ import UserBookings from './pages/UserBookings';
 import AddCar from './pages/AddCar';
 import AdminHome from './pages/AdminHome';
 import EditCar from './pages/EditCar';
+import axios from './axios';
+
 
 const ProtectedRoute = ({ children }) => {
   if (localStorage.getItem('user')) {
@@ -26,11 +28,13 @@ const router = createBrowserRouter(
         path="/booking/:carId" 
         element={<ProtectedRoute><BookingCar /></ProtectedRoute>}
         loader={async ({ params }) => {
-          const response = await fetch(`https://carrentalbackend-3aci.onrender.com/api/cars/${params.carId}`);
-          if (!response.ok) {
-            throw new Error("Failed to load car data");
-          }
-          return response.json();
+          // const response = await fetch(`https://carrentalbackend-3aci.onrender.com/api/cars/${params.carId}`);
+          const response = await axios.get(`/cars/${params.carId}`);
+          // if (!response.ok) {
+          //   throw new Error("Failed to load car data");
+          // }
+          const data = response.data;
+          return data;
         }}
       />
       <Route path="/userbookings" element={<ProtectedRoute><UserBookings /></ProtectedRoute>} />
